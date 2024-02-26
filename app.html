@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="app.css">  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <main>
+    <div class="container-fluid" id="container">
+        <div class=" row justify-content-center">
+            <div col="col">
+                <header>
+                    <h1>TRIVIAL GAME</h1>
+                </header>
+            </div>
+        </div>
+        <div class=" row">
+            <div col="col-12">
+                <div class="window-content" id="app-entry" >
+                    <div class="row">
+                        <div class="col">
+                            <p id="app-entry-comment" >
+                                ¡Bienvenidos al emocionante mundo del Trivial! Prepárate para poner a prueba tus conocimientos en un desafío lleno de diversión e intriga. 
+                                En este juego, te enfrentarás a 15 preguntas de dificultad media que abarcan un amplio espectro de temas, desde historia y ciencia hasta arte y entretenimiento.
+                                ¿Estás listo para demostrar tu dominio en temas variados? ¡Que comience la aventura de la trivia de cultura general!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col image-container">
+                            <img src="fotos/intro.jpg" alt="Intro">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button id="start-btn" class="btn-primary mt-3" style="font-size: 20px;">Start Game</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-content" id="app-questions" >
+                    <div class="row">
+                        <div class="col">
+                            <div id="question-container" class="card">
+                                <div id="question" class="card-body"></div>
+                            </div>
+                            <div id="options" class="mt-4"></div>
+                            <div id="contador"></div> 
+                            <div class="col image-container">
+                                <img src="fotos/questions.jpg" alt="Q">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-content" id="app-end" >
+                    <div class="row">
+                        <div class="col">
+                            <p id="app-entry-comment" >
+                                ¡Has finalizado el juego! 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col image-container">
+                            <img src="fotos/end.jpg" alt="end">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button id="Restart-btn" class="btn btn-primary mt-3">Play again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2024 TRIVIAL</p>
+    </footer>
+</body>
+</html>
+
+ 
