@@ -40,23 +40,23 @@ let currentQuestionIndex = 0;
         const allOptions = shuffle([...currentQuestion.incorrect_answers, currentQuestion.correct_answer]);
         allOptions.forEach(option => {
             const optionButton = document.createElement('button');
-            optionButton.innerText = option;
+            optionButton.innerHTML = option;
             optionButton.style.fontSize = '17px';
             optionButton.style.margin = '4px';
             optionButton.onclick = () => checkAnswer(option === currentQuestion.correct_answer, currentQuestion.correct_answer );
             optionsContainer.appendChild(optionButton);
         });
-        document.getElementById('contador').innerText = contador; 
+        //document.getElementById('contador').innerHTML = contador; 
     }
 
     function checkAnswer(isCorrect, correct_answer) {
         
         if (isCorrect) {
-            alert('Correct answer! ✓' ); 
+            alert('Correct answer! ✓ \n Score: '+ contador+'/10' ); 
             contador++; 
 
         } else {
-            alert('Wrong answer!  ✗ \n The correct answer is :  '+ correct_answer );
+            alert('Wrong answer!  ✗ \n The correct answer is :  '+ correct_answer+ '\n Score: '+ contador+'/10' );
         }
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {

@@ -40,6 +40,12 @@ p {
 
 }
 
+.contador {
+    font-weight: bold; /* Para hacer el texto en negrita */
+    color: blue;
+}
+
+
 footer {
     background-color: #206c71;
     color: #fff;
