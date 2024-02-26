@@ -52,11 +52,11 @@ let currentQuestionIndex = 0;
     function checkAnswer(isCorrect, correct_answer) {
         
         if (isCorrect) {
-            alert('Correct answer! ✓ \n Score: '+ contador+'/10' ); 
+            alert('Correct answer! ✓ \n Score: '+ contador+'/15' ); 
             contador++; 
 
         } else {
-            alert('Wrong answer!  ✗ \n The correct answer is :  '+ correct_answer+ '\n Score: '+ contador+'/10' );
+            alert('Wrong answer!  ✗ \n The correct answer is :  '+ correct_answer+ '\n Score: '+ contador+'/15' );
         }
         currentQuestionIndex++;
         if (currentQuestionIndex < questions.length) {
