@@ -52,8 +52,9 @@ let currentQuestionIndex = 0;
     function checkAnswer(isCorrect, correct_answer) {
         
         if (isCorrect) {
-            alert('Correct answer! ✓ \n Score: '+ contador+'/15' ); 
             contador++; 
+            alert('Correct answer! ✓ \n Score: '+ contador+'/15' ); 
+           
 
         } else {
             alert('Wrong answer!  ✗ \n The correct answer is :  '+ correct_answer+ '\n Score: '+ contador+'/15' );
@@ -62,11 +63,12 @@ let currentQuestionIndex = 0;
         if (currentQuestionIndex < questions.length) {
             showQuestion();
         } else {
-            alert('Trivial Completed! \n Score: '+ contador+'/10');
+            alert('Trivial Completed! \n Score: '+ contador+'/15');
             hideWindowContent("app-entry");
             hideWindowContent("app-questions");
             showWindowContent("app-end");
             contador=0; 
+            currentQuestionIndex= 0; 
         }
     }
 
